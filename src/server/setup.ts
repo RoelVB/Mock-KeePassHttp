@@ -52,6 +52,7 @@ export default class Setup
 
     static addLogins(logins: ISetupLogins[])
     {
+        log('verbose', `Setup: Add ${logins.length} logins`);
         for(const login of logins)
         {
             const parsedUrl = new URL(login.url);
